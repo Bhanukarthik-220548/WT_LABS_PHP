@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+}
+#main{  
+    display:flex;
+}
+#sidebar{
+    height:100vh;
+    width:45%;
+    background-color: black;
+}
+#sign{
+    height:100vh;
+    width:55%;
+    background:#eee9bc;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+input[type="text"]{
+    width:350px;
+    height:50px;
+    background-color:rgb(226, 224, 187);
+    padding-left:5px;
+    margin-top:10px;
+    transition:transform 0.2s ease-in-out;
+    font-size:20px;
+    font-weight:100px;
+    border: 2px solid black;
+}
+input[type="password"],input[type="mail"]{
+    width:350px;
+    height:50px;
+    background-color:rgb(226, 224, 187);
+    padding-left:5px;
+    margin-top:10px;
+    transition:transform 0.2s ease-in-out;
+    font-size:20px;
+    font-weight:100px;
+    border: 2px solid black;
+}
+input[type="text"]:hover,input[type="password"]:hover,input[type="mail"]:hover{
+    transform:scale(1.11);
+}
+.check{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    margin-top:10px;
+}
+input[type-checkbox]{
+    margin:0;
+    padding:0;
+    size:30px;
+}
+input[type="checkbox"]:hover{
+    transform:scale(1.11);
+}
+.capbox{
+    width:350px;
+    height:50px;
+    text-align:center;
+    padding-top: 15px;
+    position: relative;
+    border: 2px solid black;
+}
+.capbox span{
+    display:inline-block;
+}
+.capbox span:nth-child(1){
+    transform:rotate(-15deg);
+}
+.capbox span:nth-child(2){
+    transform:rotate(-5deg);
+}.capbox span:nth-child(3){
+    transform:rotate(5deg);
+}.capbox span:nth-child(4){
+    transform:rotate(20deg);
+}
+.capbox::before{
+    content:"";
+    position:absolute;
+    width:60%;
+    height:2.5px;
+    background:rgba(0,0,0,0.3);
+    top:40%;
+    left:20%;
+    transform:rotate(15deg);
+}
+.capbox::after{
+    content:"";
+    position:absolute;
+    width:55%;
+    height:2.5px;
+    background:rgba(0,0,0,0.3);
+    top:40%;
+    left:25%;
+    transform:rotate(-15deg);
+}
+button{
+    width:350px;
+    margin-top:10px;
+    padding:12px;
+    background:orange;
+    font-size:18px;
+     transition:transform 0.3s ease-in
+}
+button:hover{
+       transform:scale(1.11);
+}

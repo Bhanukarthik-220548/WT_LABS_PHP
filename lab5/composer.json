@@ -1,0 +1,9 @@
+{
+    "name": "foodie/lab5",
+    "description": "PHP Foodie Lab 5 - OAuth and User Management",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "mongodb/mongodb": "^1.15"
+    }
+}

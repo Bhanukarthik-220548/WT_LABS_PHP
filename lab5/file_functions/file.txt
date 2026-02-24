@@ -1,0 +1,2 @@
+This is new content created with w+ mode.
+This is new content added with a+ mode.

@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#main{  
+    display:flex;
+}
+#sign{
+    height:100vh;
+    width:100%;
+    background:#eee9bc;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    margin-bottom:30px;
+    font-size:32px;
+    color:#333;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+input[type="text"]{
+    width:350px;
+    height:50px;
+    background-color:rgb(226, 224, 187);
+    padding-left:15px;
+    margin-top:10px;
+    transition:all 0.2s ease-in-out;
+    font-size:16px;
+    border: 2px solid #333;
+    border-radius:5px;
+}
+input[type="email"]{
+    width:350px;
+    height:50px;
+    background-color:rgb(226, 224, 187);
+    padding-left:15px;
+    margin-top:10px;
+    transition:all 0.2s ease-in-out;
+    font-size:16px;
+    border: 2px solid #333;
+    border-radius:5px;
+}
+input[type="password"]{
+    width:350px;
+    height:50px;
+    background-color:rgb(226, 224, 187);
+    padding-left:15px;
+    margin-top:10px;
+    transition:all 0.2s ease-in-out;
+    font-size:16px;
+    border: 2px solid #333;
+    border-radius:5px;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover{
+    transform:scale(1.05);
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline:none;
+    border: 2px solid #4285F4;
+    background-color:#fff;
+}
+p{
+    margin-top:15px;
+    font-size:16px;
+    color:#333;
+}
+p a{
+    color:#4285F4;
+    text-decoration:none;
+    font-weight:bold;
+}
+p a:hover{
+    text-decoration:underline;
+}
+button,a[href*="oauth2"]{
+    width:350px;
+    height:50px;
+    margin-top:15px;
+    font-size:18px;
+    font-weight:bold;
+    background-color:#4285F4;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+}
+button:hover,
+a[href*="oauth2"]:hover{
+    background-color:#2d5ba8;
+    transform:scale(1.02);
+    box-shadow:0 4px 12px rgba(66, 133, 244, 0.4);
+}
+button:active,
+a[href*="oauth2"]:active{
+    transform:scale(0.98);
+}
